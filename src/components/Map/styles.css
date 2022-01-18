@@ -1,0 +1,10 @@
+.Map__container {
+  height: 100vh;
+  width: 100%;
+}
+
+@media all and (min-width: 900px) {
+  .Map__container {
+    padding-top: 4rem;
+  }
+}

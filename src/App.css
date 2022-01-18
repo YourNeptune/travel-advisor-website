@@ -3,3 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.App{
+  height:100vh;
+  /* overflow: hidden; */
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

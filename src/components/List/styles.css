@@ -1,0 +1,35 @@
+.List__container {
+  height: 100vh;
+}
+
+.List__titleContainer{
+    padding-top: 6rem;
+    height:40%;
+}
+
+.List__title {
+  margin-bottom: 2rem !important;
+}
+
+.List__inputsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+
+}
+
+.List__placesContainer {
+    height:60%;
+    overflow: auto;
+}
+
+
+/* @media all and (min-width: 1300px){
+    .List__titleContainer{
+        height:30%;
+    }
+    .List__placesContainer {
+        height:70%;
+    }
+} */
