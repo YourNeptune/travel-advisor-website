@@ -29,14 +29,26 @@ const PlaceDetails = ({ place }) => {
           {place.name ? place.name : "Unknown Restaurant"}
         </Typography>
         <Stack direction="row" justifyContent="space-between">
-          <Stack direction="row">
+          <Stack direction="row" justifyContent="center" alignItems="center">
             {place.rating ? (
-              <Rating name="read-only" value={place.rating} readOnly />
+              <>
+                <Typography variant="h6" mr={1}>
+                  {place.rating}
+                </Typography>
+                <Rating
+                  name="read-only"
+                  value={place.rating}
+                  precision={0.5}
+                  readOnly
+                />
+              </>
             ) : (
               <Typography variant="body1">-</Typography>
             )}
             {place.num_reviews ? (
-              <Typography variant="body1">{place.num_reviews}</Typography>
+              <Typography variant="body1" color="textSecondary">
+                ({place.num_reviews})
+              </Typography>
             ) : (
               <Typography variant="body1">-</Typography>
             )}
