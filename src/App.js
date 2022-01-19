@@ -12,10 +12,10 @@ function App() {
   const [bounds, setBounds] = useState({});
 
   useEffect(() => {
-    // getPlacesData(bounds.ne,bounds.sw).then((data) => {
-    //   console.log(data);
-    //  setPlaces(data)
-    // });
+    getPlacesData(bounds.ne, bounds.sw).then((data) => {
+      console.log(data);
+      setPlaces(data);
+    });
   }, [bounds]);
 
   useEffect(() => {
