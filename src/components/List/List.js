@@ -5,7 +5,8 @@ import Inputs from "./Inputs";
 
 import "./styles.css";
 
-const List = ({ places }) => {
+const List = ({ places, childClicked }) => {
+  console.log({ childClicked });
   return (
     <div className="List">
       <section className="List__titleContainer">

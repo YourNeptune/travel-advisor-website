@@ -12,10 +12,6 @@ export const getPlacesData = async (ne, sw) => {
         tr_latitude: ne.lat,
         bl_longitude: sw.lng,
         tr_longitude: ne.lng,
-        limit: "10",
-        currency: "CAD",
-        open_now: "false",
-        lunit: "km",
       },
       headers: {
         "x-rapidapi-host": "travel-advisor.p.rapidapi.com",

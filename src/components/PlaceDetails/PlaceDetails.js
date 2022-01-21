@@ -129,7 +129,15 @@ const PlaceDetails = ({ place }) => {
         <Button
           size="small"
           onClick={() => {
-            window.open(place.web_url);
+            window.open(place.web_url, "_blank");
+          }}
+        >
+          Trip Adivisor
+        </Button>
+        <Button
+          size="small"
+          onClick={() => {
+            window.open(place.website, "_blank");
           }}
         >
           Website

@@ -10,6 +10,7 @@ function App() {
   const [places, setPlaces] = useState([]);
   const [coordinates, setCoordinates] = useState({});
   const [bounds, setBounds] = useState({});
+  const [childClicked, setChildClicked] = useState(null);
 
   useEffect(() => {
     getPlacesData(bounds.ne, bounds.sw).then((data) => {
@@ -31,13 +32,15 @@ function App() {
       <Header />
       <Grid container spacing={0} className="App__contentContainer">
         <Grid item xs={12} md={4} className="App__listContainer">
-          <List places={places} />
+          <List places={places} childClicked={childClicked} />
         </Grid>
         <Grid item xs={12} md={8} className="App__mapContainer">
           <Map
             coordinates={coordinates}
             setCoordinates={setCoordinates}
             setBounds={setBounds}
+            places={places}
+            setChildClicked={setChildClicked}
           />
         </Grid>
       </Grid>

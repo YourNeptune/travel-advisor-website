@@ -3,6 +3,24 @@
   width: 100%;
 }
 
+.Map__PlaceMarker {
+  height: 5rem;
+  width: 6rem;
+  text-align: center;
+}
+
+.Map__PlaceMaker__paper img {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.Map__markerIcon:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 @media all and (min-width: 900px) {
   .Map__container {
     padding-top: 4rem;
